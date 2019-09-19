@@ -78,3 +78,6 @@ end
 
 # gem file from lesson 13
 gem 'simple_form'
+
+# gem file from lesson 15
+gem "font-awesome-rails"
