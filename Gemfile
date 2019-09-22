@@ -81,3 +81,8 @@ gem 'simple_form'
 
 # gem file from lesson 15
 gem "font-awesome-rails"
+
+# gem for user authentication
+gem 'devise'
+
+
