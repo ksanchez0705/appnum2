@@ -86,4 +86,8 @@ gem "font-awesome-rails"
 # gem for user authentication
 gem 'devise'
 
+# gem for geocoding address
+gem "geocoder"
 
+# gem for reading api keys?
+gem "figaro"
