@@ -91,3 +91,6 @@ gem "geocoder"
 
 # gem for reading api keys?
 gem "figaro"
+
+# gem from carrierwave to add images
+gem 'carrierwave', '~> 2.0'
