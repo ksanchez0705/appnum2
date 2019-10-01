@@ -86,3 +86,8 @@ production:
   database: nomster_production
   # username: nomster
   # password: <%= ENV['NOMSTER_DATABASE_PASSWORD'] %>
+
+  # aws account keys
+AWS_ACCESS_KEY: AKIASBRO46O7YUZJJDPR
+AWS_SECRET_KEY: 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
+AWS_BUCKET: coding-bootcamp-bucket

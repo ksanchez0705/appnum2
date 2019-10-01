@@ -81,6 +81,40 @@
 
 <div class="clear"></div>
 
+
+<button type="button" class="btn btn-primary btn-lg col-1.5 offset-6" data-toggle="modal" data-target="#photoModal">
+  Add a photo
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title" id="photoModal">Add a photo</h4>
+      </div>
+      <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+      <div class="modal-body">
+        <%= f.input :caption %>
+        <%= f.input :picture %>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="clear"></div>
+
+
+
+
 <div class="row">
 <% @place.comments.each do |comment| %>
     <div class="col-12 col-sm-6">
@@ -95,13 +129,13 @@
 <% end %>
 </div>
 
-<div class="clear"></div>
-<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
-  <%= f.input :caption %>
-  <%= f.input :picture %>
-  <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
-<% end %>
 
 <% @place.photos.each do |photo| %>
+  <div>
+    <blockquote>
+      <b><%= photo.caption %></b> -
+      <%= image_tag photo.picture.to_s, class: 'img-fluid' %>
+      <small><%= photo.user.email %></small>
+    </blockquote>
+  </div>
 <% end %>
-
