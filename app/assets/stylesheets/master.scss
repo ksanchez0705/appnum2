@@ -84,7 +84,7 @@ body {
     overflow: hidden; }
 
 .invalid-feedback {
-  color: #ff3333;
+  color: #C2DFFC;
   background-color: #FFEEEE;
   border-radius: 3px;
   padding: 2px 8px 2px 8px;
@@ -99,15 +99,17 @@ body {
 }
 
 blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
+  border: 5px dotted #ccc;
+  border-color: #86a8e7;
+  background: #C2DFFC;
+  border-left: 10px dotted #ccc;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
 }
 
 blockquote:before {
-  color: #ccc;
+  color: #C2DFFC; 
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -117,6 +119,7 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+  color: #C2DFFC; 
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
