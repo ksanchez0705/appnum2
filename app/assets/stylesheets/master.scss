@@ -26,6 +26,7 @@ body {
 .navbar {
   background: image_url('food.png');
   box-shadow: 10px 10px 5px grey;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -115,4 +116,34 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 500px;
+  width: 50%;
+  }
+
+.carousel-caption {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ }
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
+}
+
+
+.carousel-item.active, 
+.carousel-item-next, 
+.carousel-item-prev {
+  display: block;
 }
