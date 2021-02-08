@@ -93,7 +93,7 @@ gem "geocoder"
 gem "figaro"
 
 # gem from carrierwave to add images
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 
 # gem for aws
 gem "fog-aws"
